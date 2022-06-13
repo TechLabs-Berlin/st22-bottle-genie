@@ -11,11 +11,13 @@ import { BrowserRouter, Router } from 'react-router-dom';
 // Get the element by id="root" in the index.html file which is inside public folder
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Router>
+  // <BrowserRouter>
+    <Router>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Router>
+  // </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
