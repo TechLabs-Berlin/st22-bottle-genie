@@ -13,3 +13,4 @@
 - **package-lock.json**: records the exact version of packages that we install
 - **README.md**: instructions on how to use this project.
 - **.gitignore**: references to the Git Version Control System, uses to ignore files/folders in Git.
+

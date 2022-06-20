@@ -7,8 +7,9 @@ function App() {
     <div className='App'>
       <h1>Hello World!</h1>
       {/* <Routes> */}
-        <Route path="/signup" element={<SignUp />}/>
+        {/* <Route path="/signup" element={<SignUp />}/> */}
       {/* </Routes> */}
+      <SignUp/>
     </div>
   );
 }
