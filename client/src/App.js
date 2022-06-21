@@ -5,10 +5,11 @@ import SignUp from './pages/Signup';
 function App() {
   return (
     <div className='App'>
-     <h1>Hello World!</h1>
-     <Route>
-       <SignUp/>
-     </Route>
+      <h1>Hello World!</h1>
+      {/* <Routes> */}
+        {/* <Route path="/signup" element={<SignUp />}/> */}
+      {/* </Routes> */}
+      <SignUp/>
     </div>
   );
 }
