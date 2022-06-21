@@ -1,18 +1,18 @@
 const { Schema, model } = require("mongoose");
 
 const userSchema = new Schema({
-        username: {
+        name: {
             type: String,
-            required: true,
+            required: [true, "User cannot be empty"],
         },
         email: {
             type: String,
             required: true,
-            unique: true
+            unique: [true, "Email cannot be empty"],
         },
         password: {
             type: String,
-            required: true,
+            required: [true, "Password cannot be empty"],
         },
         city: {
             type: String,
