@@ -18,15 +18,14 @@ router.post("/signup", (req, res, next) => {
 
     if (!email ||
         !password ||
-        !name ||
-        !city ||
-        !country
+        !name
     ) {
         res.status(400).json({ message: "Please provide information in the required fields" })
         return
     }
 
     // Use regex to validate the email format.
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
     if (!emailRegex.test(email)) {
         res.status(400).json({ message: 'Email address is invalid' });
         return;
