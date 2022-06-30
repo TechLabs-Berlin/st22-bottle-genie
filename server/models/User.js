@@ -15,12 +15,10 @@ const userSchema = new Schema({
             required: [true, "Password cannot be empty"],
         },
         city: {
-            type: String,
-            required: true,
+            type: String
         },
         country: {
-            type: String,
-            required: true,
+            type: String
         }
     },
 
