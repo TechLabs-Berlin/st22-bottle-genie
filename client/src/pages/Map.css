@@ -54,12 +54,11 @@
     font-style: normal;
 }
 
-.to-homepage {
-    margin-top: 0.25rem;
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-}
-
 .link {
     color: rgb(35, 106, 51);
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
 }
