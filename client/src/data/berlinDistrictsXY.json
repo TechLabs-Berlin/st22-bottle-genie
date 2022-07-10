@@ -1,41 +1,16 @@
 [{
-    "type": "Feature",
-    "id": 0,
-    "properties": {
-        "popupContent": "Edeka Mitte"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [13.413244, 52.521992]
+        "type": "Feature",
+        "id": 0,
+        "properties": {
+            "popupContent": {
+                "name": "EDEKA",
+                "address": "Rosenthaler Str. 43-45, 10178 Berlin"
+            }
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.413244, 52.521992]
+        }
     }
-}, {
-    "type": "Feature",
-    "id": 1,
-    "properties": {
-        "popupContent": "Netto Kreuzberg"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [13.391799, 52.498604]
-    }
-}, {
-    "type": "Feature",
-    "id": 2,
-    "properties": {
-        "popupContent": "Rewe Friedrichshain"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [13.454293, 52.515816]
-    }
-}, {
-    "type": "Feature",
-    "id": 3,
-    "properties": {
-        "popupContent": "Lidl Spandau"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [13.143367, 52.532271]
-    }
-}]
+
+]

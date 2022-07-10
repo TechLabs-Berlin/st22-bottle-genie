@@ -3,8 +3,10 @@ import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import './Map.css';
 // import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
-import L from "leaflet"
-import berlinDistrictsXY from "./../data/berlinDistrictsXY.json"
+import L from "leaflet";
+import edekaLogo from "./../asset/edekaLogo.png"
+import berlinDistrictsXY from "./../data/berlinDistrictsXY.json";
+
 
 //add Marker (replace the default icon by leaflet icon package)
 delete L.Icon.Default.prototype._getIconUrl;
@@ -19,11 +21,17 @@ L.Icon.Default.mergeOptions({
     shadowSize: [41, 41]
 });
 
+
+const mapIcon = new L.Icon({
+    iconUrl: edekaLogo,
+    iconSize: [26, 26]
+})
+
 function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
+    if (!feature.properties) return;
     if (feature.properties && feature.properties.popupContent) {
-        layer.bindPopup(feature.properties.popupContent);
-    }
+        layer.bindPopup('<h6>' + feature.properties.popupContent.name + '</h6><p>' + feature.properties.popupContent.address + '</p>');
+    };
 }
 
 function Map(props) {
@@ -55,8 +63,13 @@ function Map(props) {
         // https://leafletjs.com/examples/geojson/
         // Latlng = [latitude, longitude]; Point = [x:longitude, y:latitude]
         L.geoJSON(berlinDistrictsXY, {
-            onEachFeature: onEachFeature
-        }).addTo(map);
+                pointToLayer: (feature, lastlng) => {
+                    return L.marker(lastlng, {
+                        icon: mapIcon
+                    });
+                },
+                onEachFeature: onEachFeature
+            }).addTo(map);
     };
 
     return (
