@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import './Map.css';
 // import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet"
+import berlinDistrictsXY from "./../data/berlinDistrictsXY.json"
 
-//add Marker
+//add Marker (replace the default icon by leaflet icon package)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
@@ -18,13 +19,19 @@ L.Icon.Default.mergeOptions({
     shadowSize: [41, 41]
 });
 
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.popupContent);
+    }
+}
+
 function Map(props) {
     // This position could be changed to some place in Germany so initial view won't be in the middle of the sea
     const [userLocation, setUserLocation] = useState([0, 0]);
     // const berlinLocation = [52.520008, 13.381777];
     const initalLocation = [51.1657, 10.4515];
     const zoom = 12;
-
 
     useEffect(() => {
         const success = ({ coords }) => {
@@ -42,11 +49,15 @@ function Map(props) {
 
 
     const onMapCreated = map => {
-        // console.log(map.constructor.name);
-        // map.flyTo([10.762622, 106.660172], 12, { duration: 15 })
+        // console.log(map);
         map.flyTo([52.520008, 13.381777], 12, { duration: 8 })
-        // map.flyTo({userLocation}, 12, { duration: 8 })
-    }
+        // https://leafletjs.com/reference.html#point
+        // https://leafletjs.com/examples/geojson/
+        // Latlng = [latitude, longitude]; Point = [x:longitude, y:latitude]
+        L.geoJSON(berlinDistrictsXY, {
+            onEachFeature: onEachFeature
+        }).addTo(map);
+    };
 
     return (
         <>
