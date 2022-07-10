@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import './Map.css';
 import Map from "../components/Map";
 
 

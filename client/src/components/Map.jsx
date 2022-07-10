@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-// import './Map.css';
-import { Icon } from "leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-leaflet';
+import './Map.css';
+// import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet"
 
+//add Marker
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
@@ -20,8 +21,10 @@ L.Icon.Default.mergeOptions({
 function Map(props) {
     // This position could be changed to some place in Germany so initial view won't be in the middle of the sea
     const [userLocation, setUserLocation] = useState([0, 0]);
-    const berlinLocation = [52.520008, 13.381777];
+    // const berlinLocation = [52.520008, 13.381777];
+    const initalLocation = [51.1657, 10.4515];
     const zoom = 12;
+
 
     useEffect(() => {
         const success = ({ coords }) => {
@@ -37,16 +40,37 @@ function Map(props) {
         return () => navigator.geolocation.clearWatch(watchId);
     }, [])
 
+
+    const onMapCreated = map => {
+        // console.log(map.constructor.name);
+        // map.flyTo([10.762622, 106.660172], 12, { duration: 15 })
+        map.flyTo([52.520008, 13.381777], 12, { duration: 8 })
+        // map.flyTo({userLocation}, 12, { duration: 8 })
+    }
+
     return (
         <>
             {/* setting the zoomControl property to false as we will be adding a zoomControl manually */}
-            <MapContainer className="container-fluid" id="main-container" center={berlinLocation} zoom={zoom} scrollWheelZoom={false}>
+            <MapContainer
+                className="container-fluid"
+                id="main-container"
+                whenCreated={onMapCreated}
+                center={initalLocation}
+                zoom={zoom}
+                scrollWheelZoom={false}
+                doubleClickZoom={true}
+                zoomAnimation={true}
+                fadeAnimation={true}
+            >
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 />
                 <Marker position={userLocation}>
                     <Popup>You are here!</Popup>
+                    {/* stroke={false} means the circle border won't be showed
+                    color="limegreen" fillColor="limegreen" weight={5} opacity={0.5} */}
+                    <Circle className="circle-radius" center={userLocation} radius={1200}></Circle>
                 </Marker>
             </MapContainer>
         </>
