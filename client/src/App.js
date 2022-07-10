@@ -3,7 +3,7 @@ import "./App.css";
 import Homepage from "./pages/Homepage";
 import Signup from "./pages/Signup";
 import LogIn from "./components/LogIn";
-import Map from "./pages/Map"
+import Mappage from "./pages/Mappage"
 import {berlinDistrictsXY} from "./data/data"
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<LogIn />} />
-        <Route path='/map' element={<Map berlinDistrictsXY={berlinDistrictsXY}/>} />
+        <Route path='/map' element={<Mappage berlinDistrictsXY={berlinDistrictsXY}/>} />
       </Routes>
     </div>
   );
