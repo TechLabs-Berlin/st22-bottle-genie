@@ -9,6 +9,7 @@ import '../pages/Signup.jsx';
 
 function Pass() {
 	const [ email, setEmail ] = useState('');
+	const [ isHidden, setHidden ] = useState(true);
 	const [ password, setPassword ] = useState('');
 
 	const navigate = useNavigate();
@@ -39,7 +40,7 @@ function Pass() {
 	return (
 		<span className="input-password">
 			<input
-				type="password"
+				type={isHidden ? 'password' : 'text'}
 				id="inputPassword6"
 				className="form-control"
 				aria-describedby="passwordHelpInline"
@@ -47,6 +48,9 @@ function Pass() {
 				value={password}
 				onChange={handlePassword}
 			/>
+			<span className="material-symbols-outlined" id="icon" onClick={() => setHidden(!isHidden)}>
+				{isHidden ? 'visibility_off' : 'visibility'}
+			</span>
 		</span>
 	);
 }
