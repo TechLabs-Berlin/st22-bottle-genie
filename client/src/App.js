@@ -18,7 +18,7 @@ function App() {
 				<Route path="/pass" element={<Pass />} />
 				<Route path="/search" element={<Search />} />
 				<Route path="/wiki" element={<Wiki />} />
-				<Route path="/homepage" element={<Homepage />} />
+				<Route path="/" element={<Homepage />} />
 				<Route path="/map" element={<Mappage />} />
 				{/* <Route path="/search" element={<ProtectedRoute redirectTo='/login'><Search /></ProtectedRoute>} />
                 <Route path="/wiki" element={<ProtectedRoute redirectTo='/login'><Wiki /></ProtectedRoute>} />
