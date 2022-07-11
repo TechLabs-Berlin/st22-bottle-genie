@@ -1,0 +1,16 @@
+[{
+        "type": "Feature",
+        "id": 0,
+        "properties": {
+            "popupContent": {
+                "name": "EDEKA",
+                "address": "Rosenthaler Str. 43-45, 10178 Berlin"
+            }
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [13.413244, 52.521992]
+        }
+    }
+
+]

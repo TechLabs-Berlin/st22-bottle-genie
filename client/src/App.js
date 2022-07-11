@@ -6,6 +6,7 @@ import Pass from './components/Pass';
 import Search from './pages/Search';
 import Wiki from './pages/Wiki';
 import Homepage from './pages/Homepage';
+import Mappage from './pages/Mappage';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/search" element={<Search />} />
 				<Route path="/wiki" element={<Wiki />} />
 				<Route path="/homepage" element={<Homepage />} />
+				<Route path="/map" element={<Mappage />} />
 			</Routes>
 		</div>
 	);
