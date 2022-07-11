@@ -1,0 +1,100 @@
+#main-container {
+    width: 375px;
+    height: 667px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#heading {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    opacity: 90%;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+#logo {
+    width: 35% !important;
+    margin: auto;
+    display: block;
+    padding-top: 1rem;
+}
+
+.form-select {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+#button-search {
+    display: inline-flex;
+    margin-top: 2rem;
+    padding-left: 5.6rem;
+    padding-right: 5.8rem;
+}
+
+#navbar {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid black;
+    display: inline-block;
+}
+
+.gohome {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.gosearch {
+    display: inline-block;
+    padding-left: 1.8rem;
+}
+
+.gowiki {
+    display: inline-block;
+    padding-top: 0.1rem;
+    padding-left: 2.5rem;
+}
+
+.gowiki:hover {
+    opacity: 70%;
+    transition: 300ms;
+}
+
+.gosearch:hover {
+    opacity: 70%;
+    transition: 300ms;
+}
+
+.gohome:hover {
+    opacity: 70%;
+    transition: 300ms;
+}
+
+.home {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.search {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-left: 1.7rem;
+    display: inline-block;
+}
+
+.wiki {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-left: 3rem;
+    display: inline-block;
+}

@@ -14,7 +14,7 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 
 // SIGNUP - Create a new user in the db.
 router.post("/signup", (req, res, next) => {
-    const { email, password, name, city, country } = req.body;
+    const { email, password, name } = req.body;
 
     if (!email ||
         !password ||
@@ -59,8 +59,6 @@ router.post("/signup", (req, res, next) => {
                 email,
                 password: hashedPassword,
                 name,
-                city,
-                country
             })
         })
         .then((createdUser) => {
@@ -137,8 +135,5 @@ router.get('/verify', isAuthenticated, (req, res, next) => {
     // Send back the object with user data previously set as the payload token.
     res.status(200).json(req.payload);
 })
-
-
-
 
 module.exports = router;

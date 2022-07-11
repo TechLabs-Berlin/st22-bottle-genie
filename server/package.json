@@ -4,8 +4,7 @@
     "description": "A web app which can help people find the best route and the best way to return bottles",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
+        "start": "nodemon server.js",
         "dev": "nodemon server.js"
     },
     "repository": {
@@ -19,6 +18,8 @@
     },
     "homepage": "https://github.com/TechLabs-Berlin/st22-bottle-genie#readme",
     "dependencies": {
+        "@mui/icons-material": "^5.8.4",
+        "@popperjs/core": "^2.11.5",
         "bcryptjs": "^2.4.3",
         "cookie-parser": "^1.4.6",
         "cors": "^2.8.5",
@@ -26,10 +27,11 @@
         "express": "^4.18.1",
         "express-jwt": "^7.7.5",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^6.4.0",
+        "mongodb": "^4.7.0",
+        "mongoose": "^6.4.2",
         "morgan": "^1.10.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.16"
+        "nodemon": "^2.0.18"
     }
 }

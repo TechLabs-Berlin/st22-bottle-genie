@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import service from '../api/service';
 import { signup } from '../api/auth';
 import './Signup.css';
+import '../components/pictures/logo.png';
+import Pass from '../components/Pass';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -40,36 +42,29 @@ function SignUp() {
     return (
         <>
             <div className="container-fluid" id="main-container">
-                <img src="https://res.cloudinary.com/vinntt/image/upload/v1656619460/bottle-genie/logo_dugfqq.jpg" class="img-fluid" alt="Bottle Genie app logo" id="logo" />
-                <h2 id="heading">Sign Up</h2>
-                <h5 id="subheading">Create an account to start journey with us</h5>
+                <img src={require('../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
+                <h3 id="heading">SIGN UP</h3>
                 <form onSubmit={handleSubmit} id="sign-up-form" >
                     <div>
-                        {/* <label htmlFor="name">Name: </label> */}
-                        <input type="text" class="form-control input" placeholder="Name*" value={name} onChange={handleName} id="name" />
-                    </div>
-                    <div>
                         {/* <label htmlFor="email">Email: </label> */}
-                        <input type="text" class="form-control input" placeholder="E-Mail*" value={email} onChange={handleEmail} />
+                        <input type="text" className="form-control input" placeholder="E-MAIL" value={email} onChange={handleEmail} id="field" />
                     </div>
                     <div>
                         {/* <label htmlFor="password">Password: </label> */}
-                        <input type="password" class="form-control input" aria-describedby="passwordHelpInline" placeholder="Password*" value={password} onChange={handlePassword} />
-                    </div>
-                    <div id="passwordHelpInline" class="form-text">
-                        <p>Must contain at least 5 characters, numbers and special characters</p>
+                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="PASSWORD" value={password} onChange={handlePassword} id="field" />
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-success btn-lg" id="button">Get Started</button>
+                        {/* <label htmlFor="password">Password: </label> */}
+                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="REPEAT PASSWORD" value={password} onChange={handlePassword} id="field" />
                     </div>
-                    <div class="to-login form-text">
-                        <span> Already have an account?
-                            <Link class="link" to='/login'> Log in</Link>
+                        <button type="submit" className="btn btn-success btn-md mx-auto" id="button-signup">SIGN UP</button>
+                    <span className="fw-semibold" id="to-login">
+                        Already have an account?
+                            <Link className="link" to='/login'> Log in</Link>
                         </span>
-                    </div>
-                    <div class="to-homepage form-text">
-                            <Link class="link" to='/'> Back to Homepage</Link>
-                    </div>
+                    <p className="fw-semibold" id="to-homepage">
+                            <Link className="link" to='/'>Back to Homepage</Link>
+                    </p>
                 </form>
             </div>
             {errorMessage && <h5>{errorMessage}</h5>}

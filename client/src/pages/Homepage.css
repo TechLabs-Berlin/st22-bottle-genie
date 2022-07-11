@@ -1,0 +1,31 @@
+#main-container-home {
+    width: 375px;
+    height: 667px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#logo-home {
+    display: inline-flex;
+    position: absolute;
+    padding-left: 2rem;
+    padding-right: 14rem;
+    width: 600px;
+    height: 300px;
+}
+
+#welcome {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20rem;
+    font-family: 'Oswald', sans-serif;
+    opacity: 90%;
+}
+
+#recycling-assistant {
+    font-weight: 700;
+    color: rgb(35, 106, 51);
+}
