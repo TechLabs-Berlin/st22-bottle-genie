@@ -29,37 +29,37 @@ const anchorIcon = L.Icon.Default.mergeOptions({
 
 function getIcon (feature) {
     switch(feature.properties.popupContent.name) {
-        case 'EDEKA':
+        case 'Edeka':
             return new L.Icon({
                 iconUrl: edekaLogo,
                 iconSize: [26, 26]
             });
-        case 'REWE':
+        case 'Rewe':
             return new L.Icon({
                 iconUrl: reweLogo,
                 iconSize: [26, 26]
             });
-        case 'LIDL':
+        case 'Lidl':
             return new L.Icon({
                 iconUrl: lidlLogo,
                 iconSize: [26, 26]
             });
-        case 'NETTO':
+        case 'Netto':
             return new L.Icon({
                 iconUrl: nettoLogo,
                 iconSize: [26, 26]
             });
-        case 'ALDI':
+        case 'Aldi':
             return new L.Icon({
                 iconUrl: aldiLogo,
                 iconSize: [26, 26]
             });
-        case 'PENNY':
+        case 'Penny':
             return new L.Icon({
                 iconUrl: pennyLogo,
                 iconSize: [26, 26]
             });
-            case 'ALNATURA':
+            case 'Alnatura':
                 return new L.Icon({
                     iconUrl: alnaturaLogo,
                     iconSize: [26, 26]

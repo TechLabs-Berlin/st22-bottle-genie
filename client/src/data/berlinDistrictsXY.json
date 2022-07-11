@@ -3,7 +3,7 @@
         "id": 0,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Rosenthaler Str. 43-45, 10178 Berlin"
             }
         },
@@ -20,7 +20,7 @@
         "id": 1,
         "properties": {
             "popupContent": {
-                "name": "NETTO",
+                "name": "Netto",
                 "address": "Kreuzberg"
             }
         },
@@ -37,7 +37,7 @@
         "id": 2,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Friedrichshain"
             }
         },
@@ -54,7 +54,7 @@
         "id": 3,
         "properties": {
             "popupContent": {
-                "name": "LIDL",
+                "name": "Lidl",
                 "address": "Tempelhof"
             }
         },
@@ -71,7 +71,7 @@
         "id": 4,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Spandau"
             }
         },
@@ -88,7 +88,7 @@
         "id": 5,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Nollendorfplatz"
             }
         },
@@ -105,7 +105,7 @@
         "id": 6,
         "properties": {
             "popupContent": {
-                "name": "LIDL",
+                "name": "Lidl",
                 "address": "Schöneberg"
             }
         },
@@ -122,7 +122,7 @@
         "id": 7,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Prenzlauer Berg"
             }
         },
