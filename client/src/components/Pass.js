@@ -5,7 +5,7 @@ import { login } from '../api/auth';
 import '../context/auth';
 import { useState } from 'react';
 import './Pass.css';
-import '../pages/Signup.jsx';
+import '../pages/SignUp/Signup';
 
 function Pass() {
 	const [ email, setEmail ] = useState('');

@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import ProtectedRoute from "./components/ProtectedRoute";
-import Signup from './pages/Signup';
-import LogIn from './pages/LogIn';
+import Signup from './pages/SignUp/Signup';
+import LogIn from './pages/LogIn/LogIn';
 import Pass from './components/Pass';
-import Search from './pages/Search';
-import Wiki from './pages/Wiki';
-import Homepage from './pages/Homepage';
-import Mappage from './pages/Mappage';
+import Search from './pages/Search/Search';
+import Wiki from './pages/Wiki/Wiki';
+import Homepage from './pages/Homepage/Homepage';
+import Mappage from './pages/Map/Mappage';
 
 function App() {
 	return (
