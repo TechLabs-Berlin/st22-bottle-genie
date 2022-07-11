@@ -49,7 +49,7 @@ function Pass() {
 				onChange={handlePassword}
 			/>
 			<span className="material-symbols-outlined" id="icon" onClick={() => setHidden(!isHidden)}>
-				{isHidden ? 'visibility_off' : 'visibility'}
+				{isHidden ? 'visibility' : 'visibility_off'}
 			</span>
 		</span>
 	);
