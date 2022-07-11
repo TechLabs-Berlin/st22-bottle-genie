@@ -6,7 +6,7 @@ function Mappage() {
 
     return (
         <div >
-        <Map/>
+            <Map />
         </div>
     )
 }

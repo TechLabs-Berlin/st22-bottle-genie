@@ -47,15 +47,15 @@ function SignUp() {
                 <form onSubmit={handleSubmit} id="sign-up-form" >
                     <div>
                         {/* <label htmlFor="email">Email: </label> */}
-                        <input type="text" className="form-control input" placeholder="E-MAIL" value={email} onChange={handleEmail} id="field" />
+                        <input type="text" className="form-control input" placeholder="E-MAIL" value={email} onChange={handleEmail} id="email" />
                     </div>
                     <div>
                         {/* <label htmlFor="password">Password: </label> */}
-                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="PASSWORD" value={password} onChange={handlePassword} id="field" />
+                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="PASSWORD" value={password} onChange={handlePassword} id="password" />
                     </div>
                     <div>
                         {/* <label htmlFor="password">Password: </label> */}
-                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="REPEAT PASSWORD" value={password} onChange={handlePassword} id="field" />
+                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="REPEAT PASSWORD" value={password} onChange={handlePassword} id="repeat-password" />
                     </div>
                         <button type="submit" className="btn btn-success btn-md mx-auto" id="button-signup">SIGN UP</button>
                     <span className="fw-semibold" id="to-login">
