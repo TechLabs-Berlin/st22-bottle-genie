@@ -42,7 +42,7 @@ function SignUp() {
     return (
         <>
             <div className="container-fluid" id="main-container">
-                <img src="https://res.cloudinary.com/vinntt/image/upload/v1656619460/bottle-genie/logo_dugfqq.jpg" class="img-fluid" alt="Bottle Genie app logo" id="logo" />
+                <img src={require('../../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
                 <h3 id="heading">SIGN UP</h3>
                 <form onSubmit={handleSubmit} id="sign-up-form" >
                     <div>
