@@ -43,7 +43,7 @@ function LogIn() {
 	return (
 		<div className="container-fluid" id="main-container">
 			<img
-				src="https://res.cloudinary.com/vinntt/image/upload/v1656619460/bottle-genie/logo_dugfqq.jpg"
+				src={require('../../components/pictures/logo.png')}
 				className="img-fluid"
 				alt="Bottle Genie app logo"
 				id="logo"
