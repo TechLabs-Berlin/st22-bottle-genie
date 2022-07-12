@@ -8,3 +8,6 @@ npm-debug.log
 .env
 
 /client/node_modules
+
+routes/search.js
+models/Bottle.js
