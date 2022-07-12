@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import service from '../../api/service';
 import { signup } from '../../api/auth';
 import './Signup.css';
 import '../../components/pictures/logo.png';
-import Pass from '../../components/Pass';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -25,6 +23,7 @@ function SignUp() {
                 navigate('/login')
             })
             .catch(err => {
+                console.log(err)
                 const errorDescription = err.response.data.message
                 setErrorMessage(errorDescription)
             });
@@ -44,30 +43,30 @@ function SignUp() {
             <div className="container-fluid" id="main-container">
                 <img src={require('../../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
                 <h3 id="heading">SIGN UP</h3>
-                <form onSubmit={handleSubmit} id="sign-up-form" >
+                <form onSubmit={handleSubmit} method="post" id="sign-up-form" >
                     <div>
                         {/* <label htmlFor="email">Email: </label> */}
+                        <input type="text" className="form-control input" placeholder="NAME" value={name} onChange={handleName} id="name" />
+                    </div>
+                    <div>
+                        {/* <label htmlFor="password">Password: </label> */}
                         <input type="text" className="form-control input" placeholder="E-MAIL" value={email} onChange={handleEmail} id="email" />
                     </div>
                     <div>
                         {/* <label htmlFor="password">Password: </label> */}
                         <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="PASSWORD" value={password} onChange={handlePassword} id="password" />
                     </div>
-                    <div>
-                        {/* <label htmlFor="password">Password: </label> */}
-                        <input type="password" className="form-control input" aria-describedby="passwordHelpInline" placeholder="REPEAT PASSWORD" value={password} onChange={handlePassword} id="repeat-password" />
-                    </div>
-                        <button type="submit" className="btn btn-success btn-md mx-auto" id="button-signup">SIGN UP</button>
+                    {errorMessage && <p className='error-message'>{errorMessage}</p>}
+                    <button type="submit" className="btn btn-success btn-md mx-auto" id="button-signup">SIGN UP</button>
                     <span className="fw-semibold" id="to-login">
                         Already have an account?
-                            <Link className="link" to='/login'> Log in</Link>
-                        </span>
+                        <Link className="link" to='/login'> Log in</Link>
+                    </span>
                     <p className="fw-semibold" id="to-homepage">
-                            <Link className="link" to='/'>Back to Homepage</Link>
+                        <Link className="link" to='/'>Back to Homepage</Link>
                     </p>
                 </form>
             </div>
-            {errorMessage && <h5>{errorMessage}</h5>}
         </>
     )
 }
