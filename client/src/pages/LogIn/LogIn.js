@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import service from '../api/service';
-import { login } from '../api/auth';
-import '../context/auth';
+import service from '../../api/service';
+import { login } from '../../api/auth';
+import '../../context/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import './LogIn.css';
-import '../components/pictures/logo.png';
-import Pass from '../components/Pass';
+import '../../components/pictures/logo.png';
+import Pass from '../../components/Pass';
 
 function LogIn() {
 	const [ email, setEmail ] = useState('');
@@ -43,7 +43,7 @@ function LogIn() {
 	return (
 		<div className="container-fluid" id="main-container">
 			<img
-				src={require('../components/pictures/logo.png')}
+				src={require('../../components/pictures/logo.png')}
 				className="img-fluid"
 				alt="Bottle Genie app logo"
 				id="logo"

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import service from '../api/service';
-import { signup } from '../api/auth';
+import service from '../../api/service';
+import { signup } from '../../api/auth';
 import './Signup.css';
-import '../components/pictures/logo.png';
-import Pass from '../components/Pass';
+import '../../components/pictures/logo.png';
+import Pass from '../../components/Pass';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -42,7 +42,7 @@ function SignUp() {
     return (
         <>
             <div className="container-fluid" id="main-container">
-                <img src={require('../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
+                <img src={require('../../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
                 <h3 id="heading">SIGN UP</h3>
                 <form onSubmit={handleSubmit} id="sign-up-form" >
                     <div>
