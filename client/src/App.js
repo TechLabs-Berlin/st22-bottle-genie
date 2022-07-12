@@ -7,6 +7,7 @@ import Search from './pages/Search/Search';
 import Wiki from './pages/Wiki/Wiki';
 import Homepage from './pages/Homepage/Homepage';
 import Mappage from './pages/Map/Mappage';
+import Scanpage from './pages/Scan/Scanpage';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Route path="/wiki" element={<Wiki />} />
 				<Route path="/" element={<Homepage />} />
 				<Route path="/map" element={<Mappage />} />
+				<Route path="/scan" element={<Scanpage />} />
 				{/* <Route path="/search" element={<ProtectedRoute redirectTo='/login'><Search /></ProtectedRoute>} />
                 <Route path="/wiki" element={<ProtectedRoute redirectTo='/login'><Wiki /></ProtectedRoute>} />
                 <Route path="/" element={<ProtectedRoute redirectTo='/login'><Homepage /></ProtectedRoute>} />
