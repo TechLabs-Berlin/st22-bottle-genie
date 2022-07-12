@@ -4,13 +4,19 @@ import './Map.css';
 // import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet";
-import edekaLogo from "./../asset/edekaLogo.png"
+import edekaLogo from "./../asset/edekaLogo.png";
+import lidlLogo from "./../asset/lidlLogo.png";
+import reweLogo from "./../asset/reweLogo.png";
+import nettoLogo from "./../asset/nettoLogo.png";
+import aldiLogo from "./../asset/aldiLogo.png";
+import pennyLogo from "./../asset/pennyLogo.png";
+import alnaturaLogo from "./../asset/alnaturaLogo.jpg";
 import berlinDistrictsXY from "./../data/berlinDistrictsXY.json";
 
 
 //add Marker (replace the default icon by leaflet icon package)
 delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
+const anchorIcon = L.Icon.Default.mergeOptions({
     iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
     iconUrl: require("leaflet/dist/images/marker-icon.png"),
     shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
@@ -21,11 +27,53 @@ L.Icon.Default.mergeOptions({
     shadowSize: [41, 41]
 });
 
+function getIcon (feature) {
+    switch(feature.properties.popupContent.name) {
+        case 'Edeka':
+            return new L.Icon({
+                iconUrl: edekaLogo,
+                iconSize: [26, 26]
+            });
+        case 'Rewe':
+            return new L.Icon({
+                iconUrl: reweLogo,
+                iconSize: [26, 26]
+            });
+        case 'Lidl':
+            return new L.Icon({
+                iconUrl: lidlLogo,
+                iconSize: [26, 26]
+            });
+        case 'Netto':
+            return new L.Icon({
+                iconUrl: nettoLogo,
+                iconSize: [26, 26]
+            });
+        case 'Aldi':
+            return new L.Icon({
+                iconUrl: aldiLogo,
+                iconSize: [26, 26]
+            });
+        case 'Penny':
+            return new L.Icon({
+                iconUrl: pennyLogo,
+                iconSize: [26, 26]
+            });
+            case 'Alnatura':
+                return new L.Icon({
+                    iconUrl: alnaturaLogo,
+                    iconSize: [26, 26]
+                });
+        default:
+            return anchorIcon;
+    }
+  };
 
-const mapIcon = new L.Icon({
-    iconUrl: edekaLogo,
-    iconSize: [26, 26]
-})
+
+// const mapIcon = new L.Icon({
+//     iconUrl: edekaLogo,
+//     iconSize: [26, 26]
+// })
 
 function onEachFeature(feature, layer) {
     if (!feature.properties) return;
@@ -65,7 +113,7 @@ function Map(props) {
         L.geoJSON(berlinDistrictsXY, {
                 pointToLayer: (feature, lastlng) => {
                     return L.marker(lastlng, {
-                        icon: mapIcon
+                        icon: getIcon(feature)
                     });
                 },
                 onEachFeature: onEachFeature
