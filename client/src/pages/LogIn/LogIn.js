@@ -25,7 +25,7 @@ function LogIn() {
 		login(email, password)
 			.then((response) => {
 				// redirect to homepage
-				navigate('/homepage');
+				navigate('/');
 			})
 			.catch((err) => {
 				const errorDescription = err.response.data.message;
@@ -49,7 +49,7 @@ function LogIn() {
 				id="logo"
 			/>
 			<h3 id="heading">LOGIN</h3>
-			<form onSubmit={handleSubmit} id="login-form">
+			<form onSubmit={handleSubmit} method="post" id="login-form">
 				<input
 					type="email"
 					id="inputEmail3"
