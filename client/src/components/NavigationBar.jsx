@@ -1,16 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './pictures/logo.png';
-import bookicon from './pictures/book-open.svg';
-import homeicon from './pictures/home.svg';
-import searchicon from './pictures/search.svg';
+import bookicon from './../asset/book-open.svg';
+import homeicon from './../asset/home.svg';
+import searchicon from './../asset/search.svg';
 
 function NavigationBar() {
 	return (
 			<div className="container" id="navbar">
 				<div className="row row-cols-3">
 					<div className="gohome">
-						<a href="/homepage">
+						<a href="/">
 							<img src={homeicon} alt="Homepage icon" />
 						</a>
 					</div>

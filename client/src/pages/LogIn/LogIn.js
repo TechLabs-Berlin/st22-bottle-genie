@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import './LogIn.css';
-import '../../components/pictures/logo.png';
+import '../../asset/logo.png';
 import Pass from '../../components/Pass';
 
 function LogIn() {
@@ -43,7 +43,7 @@ function LogIn() {
 	return (
 		<div className="container-fluid" id="main-container">
 			<img
-				src={require('../../components/pictures/logo.png')}
+				src={require('../../asset/logo.png')}
 				className="img-fluid"
 				alt="Bottle Genie app logo"
 				id="logo"
