@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import CenterFocusWeakIcon from '@mui/icons-material/CenterFocusWeak';
 import Webcam from "react-webcam";
+import "./Scan.css"
 
 function Scan() {
     const [scan, setScan] = useState('');
@@ -11,7 +12,7 @@ function Scan() {
     // Video constraints define the properties of the video recording that goes on before the image is captured
     const videoConstraints = {
         width: 220,
-        height: 200,
+        height: 220,
         facingMode: "user"
         // https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/facingMode
         // facingMode: { exact: "environment" }
@@ -21,8 +22,8 @@ function Scan() {
         audio={false}
         ref={webcamRef}
         screenshotFormat="image/jpeg"
-        width={300}
-        height={300}
+        width={220}
+        height={220}
         videoConstraints={videoConstraints}
     />
 
@@ -52,11 +53,11 @@ function Scan() {
             <div>
                 {!scan && <button
                     onClick={handleOnClick}>
-                    <CenterFocusWeakIcon sx={{ fontSize: "290px" }} />
+                    <CenterFocusWeakIcon className="webcam-icon" sx={{ fontSize: "220px" }}/>
                 </button>}
                 {scan}
             </div>
-            {image !== '' ?
+            {/* {image !== '' ?
                 <button onClick={handleRetake}
                     className="webcam-btn"
                 >
@@ -68,7 +69,7 @@ function Scan() {
                 >
                     Capture
                 </button>
-            }
+            } */}
         </div>
     )
 }
