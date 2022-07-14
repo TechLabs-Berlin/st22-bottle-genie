@@ -5,9 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
 import './pictures/logo.png';
-import bookicon from './pictures/book-open.svg';
-import homeicon from './pictures/home.svg';
-import searchicon from './pictures/search.svg';
+import NavigationBar from './NavigationBar';
 
 function SearchDropdown() {
 	return (
@@ -41,31 +39,7 @@ function SearchDropdown() {
 			<button type="button" className="btn btn-success btn-md" id="button-search">
 				Find return point
 			</button>
-
-			<div className="container" id="navbar">
-				<div className="row row-cols-3">
-					<div className="gohome">
-						<a href="/homepage">
-							<img src={homeicon} alt="Homepage icon" />
-						</a>
-					</div>
-					<div className="gosearch">
-						<a href="/search">
-							<img src={searchicon} alt="Search icon" />
-						</a>
-					</div>
-					<div className="gowiki">
-						<a href="/wiki">
-							<img src={bookicon} alt="Go to Wiki" />
-						</a>
-					</div>
-				</div>
-				<div className="row row-cols-3">
-					<div className="home">HOME</div>
-					<div className="search">SEARCH</div>
-					<div className="wiki">WIKI</div>
-				</div>
-			</div>
+			<NavigationBar />
 		</div>
 	);
 }
