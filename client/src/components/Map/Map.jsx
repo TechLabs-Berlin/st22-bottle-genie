@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import './Map.css';
-// import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet";
-import edekaLogo from "./../asset/edekaLogo.png";
-import lidlLogo from "./../asset/lidlLogo.png";
-import reweLogo from "./../asset/reweLogo.png";
-import nettoLogo from "./../asset/nettoLogo.png";
-import aldiLogo from "./../asset/aldiLogo.png";
-import pennyLogo from "./../asset/pennyLogo.png";
-import alnaturaLogo from "./../asset/alnaturaLogo.jpg";
-import berlinDistrictsXY from "./../data/berlinDistrictsXY.json";
+import edekaLogo from "./../../asset/edekaLogo.png";
+import lidlLogo from "./../../asset/lidlLogo.png";
+import reweLogo from "./../../asset/reweLogo.png";
+import nettoLogo from "./../../asset/nettoLogo.png";
+import aldiLogo from "./../../asset/aldiLogo.png";
+import pennyLogo from "./../../asset/pennyLogo.png";
+import alnaturaLogo from "./../../asset/alnaturaLogo.jpg";
+import berlinDistrictsXY from "./../../data/berlinDistrictsXY.json";
 
 
 //add Marker (replace the default icon by leaflet icon package)

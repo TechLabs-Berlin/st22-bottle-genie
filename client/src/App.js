@@ -6,7 +6,7 @@ import Pass from './components/Pass';
 import Search from './pages/Search/Search';
 import Wiki from './pages/Wiki/Wiki';
 import HomePage from './pages/HomePage/HomePage';
-import MapPage from './pages/Map/MapPage';
+import MapPage from './pages/MapPage/MapPage';
 import ScanPage from './pages/ScanPage/ScanPage';
 
 function App() {

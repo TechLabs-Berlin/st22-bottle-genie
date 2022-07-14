@@ -1,4 +1,4 @@
-import Scan from '../../components/Scan';
+import Scan from '../../components/Scan/Scan';
 import NavigationBar from '../../components/NavigationBar';
 import logo from '../../asset/logo.png';
 
