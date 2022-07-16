@@ -4,7 +4,7 @@ import Signup from './pages/SignUp/Signup';
 import LogIn from './pages/LogIn/LogIn';
 import Search from './pages/Search/Search';
 import Wiki from './pages/Wiki/Wiki';
-import HomePage from './pages/HomePage/HomePage';
+import HomePage from './pages/Homepage/Homepage';
 import MapPage from './pages/MapPage/MapPage';
 import ScanPage from './pages/ScanPage/ScanPage';
 

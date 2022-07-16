@@ -1,5 +1,5 @@
 import Scan from '../../components/Scan/Scan';
-import NavigationBar from '../../components/NavigationBar';
+import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import logo from '../../asset/logo.png';
 
 function Scanpage() {
