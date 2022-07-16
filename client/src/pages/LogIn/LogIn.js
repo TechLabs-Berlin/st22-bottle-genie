@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import service from '../../api/service';
 import { login } from '../../api/auth';
 import '../../context/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import './LogIn.css';
 import '../../asset/logo.png';
-import Pass from '../../components/Pass';
 
 function LogIn() {
 	const [ email, setEmail ] = useState('');
+	const [ isHidden, setHidden ] = useState(true);
 	const [ password, setPassword ] = useState('');
 
 	const navigate = useNavigate();
@@ -58,7 +54,20 @@ function LogIn() {
 					value={email}
 					onChange={handleEmail}
 				/>
-				<Pass />
+				<span className="input-password">
+					<input
+						type={isHidden ? 'password' : 'text'}
+						id="inputPassword6"
+						className="form-control"
+						aria-describedby="passwordHelpInline"
+						placeholder="PASSWORD"
+						value={password}
+						onChange={handlePassword}
+					/>
+					<span className="material-symbols-outlined" id="icon" onClick={() => setHidden(!isHidden)}>
+						{isHidden ? 'visibility' : 'visibility_off'}
+					</span>
+				</span>
 				<button type="submit" className="btn btn-success btn-md mx-auto" id="button-login">
 					LOG IN
 				</button>
