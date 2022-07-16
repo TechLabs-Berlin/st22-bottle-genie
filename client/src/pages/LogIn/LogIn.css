@@ -70,3 +70,26 @@
     border-color: #28a745;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
+
+#inputPassword6 {
+    margin-bottom: 0.5rem;
+    cursor: text;
+}
+
+#inputPassword6:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+#icon {
+    margin-right: -16rem;
+    margin-left: 16rem;
+    display: inline-block;
+    margin-top: -2.4rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.password-input {
+    cursor: text;
+}
