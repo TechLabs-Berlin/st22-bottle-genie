@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { signup } from '../../api/auth';
 import './Signup.css';
-import '../../components/pictures/logo.png';
+import '../../asset/logo.png';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -41,7 +41,7 @@ function SignUp() {
     return (
         <>
             <div className="container-fluid" id="main-container">
-                <img src={require('../../components/pictures/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
+                <img src={require('../../asset/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
                 <h3 id="heading">SIGN UP</h3>
                 <form onSubmit={handleSubmit} method="post" id="sign-up-form" >
                     <div>
