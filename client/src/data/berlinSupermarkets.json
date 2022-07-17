@@ -1,10 +1,9 @@
-[
-    {
+[{
         "type": "Feature",
         "id": 0,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Schleiermacherstraße 25 , 10961 Berlin"
             }
         },
@@ -21,7 +20,7 @@
         "id": 1,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Friedrichstraße 191 , 10117 Berlin"
             }
         },
@@ -38,7 +37,7 @@
         "id": 2,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Else-Lasker-Schüler-Str. 18-22 , 10783 Berlin"
             }
         },
@@ -55,7 +54,7 @@
         "id": 3,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Turmstraße 72/73 , 10551 Berlin"
             }
         },
@@ -72,7 +71,7 @@
         "id": 4,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Koppenstr. 8 , 10243 Berlin"
             }
         },
@@ -89,7 +88,7 @@
         "id": 5,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Greifswalder Str. 89 , 10409 Berlin"
             }
         },
@@ -106,7 +105,7 @@
         "id": 6,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Alte Jakobstraße 79/80 , 10179 Berlin"
             }
         },
@@ -123,7 +122,7 @@
         "id": 7,
         "properties": {
             "popupContent": {
-                "name": "ALNATURA",
+                "name": "Alnatura",
                 "address": "Chausseestr. 10 , 10115 Berlin"
             }
         },
@@ -140,7 +139,7 @@
         "id": 8,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Friedrichstraße 149 , 10117 Berlin"
             }
         },
@@ -157,7 +156,7 @@
         "id": 9,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Invalidenstraße 59 , 10557 Berlin"
             }
         },
@@ -174,7 +173,7 @@
         "id": 10,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Leipziger Pl. 12 , 10117 Berlin"
             }
         },
@@ -191,7 +190,7 @@
         "id": 11,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Friedrich-Krause-Ufer 37-38 , 13353 Berlin"
             }
         },
@@ -208,7 +207,7 @@
         "id": 12,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Berolinastraße 7a , 10178 Berlin"
             }
         },
@@ -225,7 +224,7 @@
         "id": 13,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Weinstraße 9 , 10249 Berlin"
             }
         },
@@ -242,7 +241,7 @@
         "id": 14,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Heinrich-Heine-Platz 8-12 , 10179 Berlin"
             }
         },
@@ -259,7 +258,7 @@
         "id": 15,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Gerichtstraße 2-3 , 13347 Berlin"
             }
         },
@@ -276,7 +275,7 @@
         "id": 16,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Huttenstraße 41-44 , 10553 Berlin"
             }
         },
@@ -293,7 +292,7 @@
         "id": 17,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Badstraße 4 , 13357 Berlin"
             }
         },
@@ -310,7 +309,7 @@
         "id": 18,
         "properties": {
             "popupContent": {
-                "name": "ALDI",
+                "name": "Aldi",
                 "address": "Schwedter Str. 83 , 10437 Berlin"
             }
         },
@@ -327,7 +326,7 @@
         "id": 19,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Dardanellenweg 50 , 12109 Berlin"
             }
         },
@@ -344,7 +343,7 @@
         "id": 20,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Britzer Damm 73 , 12347 Berlin"
             }
         },
@@ -361,7 +360,7 @@
         "id": 21,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Flughafenstr. 45-47 , 12053 Berlin"
             }
         },
@@ -378,7 +377,7 @@
         "id": 22,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Tempelhofer Damm 24-30 , 12101 Berlin"
             }
         },
@@ -395,7 +394,7 @@
         "id": 23,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Boxhagener Straße 80 , 10245 Berlin"
             }
         },
@@ -412,7 +411,7 @@
         "id": 24,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Stephanstr. 30 , 10559 Berlin"
             }
         },
@@ -429,7 +428,7 @@
         "id": 25,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "H.Blankenstein-Strasse 40 , 10249 Berlin"
             }
         },
@@ -446,7 +445,7 @@
         "id": 26,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Kottbusser Damm 66 , 10967 Berlin"
             }
         },
@@ -463,7 +462,7 @@
         "id": 27,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Grellstr. 75 , 10409 Berlin"
             }
         },
@@ -480,7 +479,7 @@
         "id": 28,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Reichenberger Str. 57 , 10999 Berlin"
             }
         },
@@ -497,7 +496,7 @@
         "id": 29,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Alt Moabit 9 , 10557 Berlin"
             }
         },
@@ -514,7 +513,7 @@
         "id": 30,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Prenzlauer Allee 181 , 10405 Berlin"
             }
         },
@@ -531,7 +530,7 @@
         "id": 31,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Brunnenstraße 75 ,13355 Berlin"
             }
         },
@@ -548,7 +547,7 @@
         "id": 32,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Am Ostbahnhof 9 , 10243 Berlin"
             }
         },
@@ -565,7 +564,7 @@
         "id": 33,
         "properties": {
             "popupContent": {
-                "name": "PENNY",
+                "name": "Penny",
                 "address": "Friedrichstr. 69-70 , 10117 Berlin"
             }
         },
@@ -582,7 +581,7 @@
         "id": 34,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Am Ostbahnhof 9 , 10243 Berlin"
             }
         },
@@ -599,7 +598,7 @@
         "id": 35,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Litfaß-Platz 4, 10178 Berlin"
             }
         },
@@ -616,7 +615,7 @@
         "id": 36,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Friedrichstraße 67-70, 10117 Berlin"
             }
         },
@@ -633,7 +632,7 @@
         "id": 37,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Friedrichstraße 60, 10117 Berlin"
             }
         },
@@ -650,7 +649,7 @@
         "id": 38,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Friedrichstraße 100, 10117 Berlin"
             }
         },
@@ -667,7 +666,7 @@
         "id": 39,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Skalitzer Str. 134, 10999 Berlin"
             }
         },
@@ -684,7 +683,7 @@
         "id": 40,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Pasteurstraße 19, 10407 Berlin"
             }
         },
@@ -701,7 +700,7 @@
         "id": 41,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Landsberger Allee 68, 10249 Berlin"
             }
         },
@@ -718,7 +717,7 @@
         "id": 42,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Landsberger Allee 117, 10407 Berlin"
             }
         },
@@ -735,7 +734,7 @@
         "id": 43,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Revaler Str. 2, 10243 Berlin"
             }
         },
@@ -752,7 +751,7 @@
         "id": 44,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Tamara-Danz-Straße 11, 10243 Berlin"
             }
         },
@@ -769,7 +768,7 @@
         "id": 45,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Wrangelstraße 53, 10997 Berlin"
             }
         },
@@ -786,7 +785,7 @@
         "id": 46,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Skalitzer Str. 134, 10999 Berlin"
             }
         },
@@ -803,7 +802,7 @@
         "id": 47,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Alte Potsdamer Str. 7, 10785 Berlin"
             }
         },
@@ -820,7 +819,7 @@
         "id": 48,
         "properties": {
             "popupContent": {
-                "name": "REWE",
+                "name": "Rewe",
                 "address": "Yorckstraße 78, 10965 Berlin"
             }
         },
@@ -837,7 +836,7 @@
         "id": 49,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Templiner Str. 13, 10119 Berlin"
             }
         },
@@ -854,7 +853,7 @@
         "id": 50,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Straßburger Str. 9a-c, 10405 Berlin"
             }
         },
@@ -871,7 +870,7 @@
         "id": 51,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Barnimstraße 18, 10249 Berlin"
             }
         },
@@ -888,7 +887,7 @@
         "id": 52,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Platz d. Vereinten Nationen 14, 10249 Berlin"
             }
         },
@@ -905,7 +904,7 @@
         "id": 53,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Eckertstraße 11, 10249 Berlin"
             }
         },
@@ -922,7 +921,7 @@
         "id": 54,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Grunerstraße 20, 10179 Berlin"
             }
         },
@@ -939,7 +938,7 @@
         "id": 55,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Schillingstraße 2, 10179 Berlin"
             }
         },
@@ -956,7 +955,7 @@
         "id": 56,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Andreasstraße 59, 10243 Berlin"
             }
         },
@@ -973,7 +972,7 @@
         "id": 57,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Str. der Pariser Kommune 38, 10243 Berlin"
             }
         },
@@ -990,7 +989,7 @@
         "id": 58,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Fischerinsel 12, 10179 Berlin"
             }
         },
@@ -1007,7 +1006,7 @@
         "id": 59,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Annenstraße 4 A, 10179 Berlin"
             }
         },
@@ -1024,7 +1023,7 @@
         "id": 60,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Ritterstraße 38-40, 10969 Berlin"
             }
         },
@@ -1041,7 +1040,7 @@
         "id": 61,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Friedrichstraße 246, 10969 Berlin"
             }
         },
@@ -1058,7 +1057,7 @@
         "id": 62,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Leipziger Pl. 12/13, 10117 Berlin"
             }
         },
@@ -1075,7 +1074,7 @@
         "id": 63,
         "properties": {
             "popupContent": {
-                "name": "EDEKA",
+                "name": "Edeka",
                 "address": "Friedrichstraße 142, 10117 Berlin"
             }
         },

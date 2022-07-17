@@ -4,8 +4,8 @@ import Signup from './pages/SignUp/Signup';
 import LogIn from './pages/LogIn/LogIn';
 import Search from './pages/Search/Search';
 import Wiki from './pages/Wiki/Wiki';
-import HomePage from './pages/Homepage/Homepage';
-import MapPage from './pages/MapPage/MapPage';
+import HomePage from './pages/HomePage/HomePage';
+import ResultPage from './pages/ResultPage/ResultPage';
 import ScanPage from './pages/ScanPage/ScanPage';
 
 function App() {
@@ -18,12 +18,12 @@ function App() {
 				<Route path="/search" element={<Search />} />
 				<Route path="/wiki" element={<Wiki />} />
 				<Route path="/" element={<HomePage />} />
-				<Route path="/map" element={<MapPage />} />
+				<Route path="/result" element={<ResultPage />} />
 				<Route path="/scan" element={<ScanPage />} />
 				{/* <Route path="/search" element={<ProtectedRoute redirectTo='/login'><Search /></ProtectedRoute>} />
                 <Route path="/wiki" element={<ProtectedRoute redirectTo='/login'><Wiki /></ProtectedRoute>} />
                 <Route path="/" element={<ProtectedRoute redirectTo='/login'><HomePage /></ProtectedRoute>} />
-                <Route path="/map" element={<ProtectedRoute redirectTo='/login'><MapPage /></ProtectedRoute>} /> */}
+                <Route path="/map" element={<ProtectedRoute redirectTo='/login'><ResultPage /></ProtectedRoute>} /> */}
 			</Routes>
 		</div>
 	);
