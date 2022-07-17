@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
 import './../asset/logo.png';
-import NavigationBar from './NavigationBar';
+import NavigationBar from './NavigationBar/NavigationBar';
 
 function SearchDropdown() {
 	return (

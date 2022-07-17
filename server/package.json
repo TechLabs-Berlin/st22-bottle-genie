@@ -29,7 +29,8 @@
         "jsonwebtoken": "^8.5.1",
         "mongodb": "^4.7.0",
         "mongoose": "^6.4.2",
-        "morgan": "^1.10.0"
+        "morgan": "^1.10.0",
+        "react-webcam": "^7.0.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.18"
