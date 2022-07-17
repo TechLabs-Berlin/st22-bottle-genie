@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import searchDataSet from './../../data/searchDataSet.json'
+import './Result.css'
 
 function Result() {
     // React Router v6 calls these the “search params” due to them existing on the window.location.search object
@@ -28,16 +29,16 @@ function Result() {
     }, [window.location.search]);
 
     return (
-        <>
-            <h5 className='result'>Result:</h5>
+        <div className="result-component">
+            <h5>Result:</h5>
             {searchResults.length !==0 ? <p>Returnable</p> : <p>Not Returnable</p>}
-            <br />
+
                 {searchResults.map((result, index) => {
                    <p>{ result.Value }</p>
                 })}
-            <br />
+
             <p>You can return it here:</p>
-        </>
+        </div>
     )
 }
 
