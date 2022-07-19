@@ -4,7 +4,7 @@ import Signup from './pages/SignUp/Signup';
 import LogIn from './pages/LogIn/LogIn';
 import Search from './pages/Search/Search';
 import Wiki from './pages/Wiki/Wiki';
-import HomePage from './pages/HomePage/HomePage';
+import Homepage from './pages/Homepage/Homepage';
 import ResultPage from './pages/ResultPage/ResultPage';
 import ScanPage from './pages/ScanPage/ScanPage';
 
@@ -17,7 +17,7 @@ function App() {
 				<Route path="/login" element={<LogIn />} />
 				<Route path="/search" element={<Search />} />
 				<Route path="/wiki" element={<Wiki />} />
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<Homepage />} />
 				<Route path="/result" element={<ResultPage />} />
 				<Route path="/scan" element={<ScanPage />} />
 				{/* <Route path="/search" element={<ProtectedRoute redirectTo='/login'><Search /></ProtectedRoute>} />
