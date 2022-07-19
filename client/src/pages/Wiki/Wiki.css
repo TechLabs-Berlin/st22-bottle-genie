@@ -40,13 +40,13 @@ ul {
     padding-left: -50px;
 }
 
-a {
+#link {
     text-decoration: none;
     color: rgb(35, 106, 51);
     font-weight: 700;
 }
 
-a:hover {
+#link:hover {
     color: rgb(35, 106, 51);
 }
 

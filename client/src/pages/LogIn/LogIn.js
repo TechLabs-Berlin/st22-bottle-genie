@@ -4,7 +4,8 @@ import { login } from '../../api/auth';
 import '../../context/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LogIn.css';
-import '../../asset/logo.png';
+import '../../asset/logo_animated.gif';
+import '../../asset/tagline.png';
 
 function LogIn() {
 	const [ email, setEmail ] = useState('');
@@ -37,12 +38,18 @@ function LogIn() {
 	const [ errorMessage, setErrorMessage ] = useState(undefined);
 
 	return (
-		<div className="container-fluid" id="main-container">
+		<div className="container-fluid" id="login-container">
 			<img
-				src={require('../../asset/logo.png')}
+				src={require('../../asset/logo_animated.gif')}
 				className="img-fluid"
-				alt="Bottle Genie app logo"
-				id="logo"
+				alt="Animated Bottle Genie app logo"
+				id="animated-logo"
+			/>
+			<img
+				src={require('../../asset/tagline.png')}
+				className="img-fluid"
+				alt="Bottle Genie app tagline"
+				id="tagline"
 			/>
 			<h3 id="heading">LOGIN</h3>
 			<form onSubmit={handleSubmit} method="post" id="login-form">
