@@ -9,7 +9,7 @@ function Wiki() {
 	return (
 		<div className="container-fluid" id="main-container">
 			<img src={require('../../asset/logo.png')} className="img-fluid" alt="Bottle Genie app logo" id="logo" />
-			<h3 id="heading">BOTTLE WIKI</h3>
+			<h3 id="heading-wiki">BOTTLE WIKI</h3>
 			<section className="box" id="wiki-article">
 				<p>
 					In Germany, there is a <b>bottle return system</b>. When you buy certain products, you pay a{' '}

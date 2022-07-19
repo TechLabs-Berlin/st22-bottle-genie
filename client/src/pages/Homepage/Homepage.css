@@ -9,23 +9,39 @@
 }
 
 #logo-home {
-    display: inline-flex;
-    position: absolute;
-    padding-left: 2rem;
-    padding-right: 14rem;
-    width: 600px;
-    height: 300px;
+    width: 60% !important;
+    margin: auto;
+    display: block;
+    padding-top: 1rem;
 }
 
 #welcome {
     display: inline-block;
-    text-align: center;
-    margin-top: 20rem;
     font-family: 'Oswald', sans-serif;
     opacity: 90%;
+    padding-left: 6.1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
-#recycling-assistant {
-    font-weight: 700;
+#greeting {
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+    display: block;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#logout {
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+    display: block;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#logout-link {
+    text-decoration: none;
     color: rgb(35, 106, 51);
+    font-weight: 700;
 }
