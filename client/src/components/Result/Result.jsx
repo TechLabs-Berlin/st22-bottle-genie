@@ -31,10 +31,9 @@ function Result() {
     return (
         <div className="result-component">
             <h5>Result:</h5>
-            {searchResults.length !==0 ? <p>Returnable</p> : <p>Nonreturnable</p>}
-
+            {searchResults.length !== 0 ? <p>Returnable</p> : <p>Nonreturnable</p>}
                 {searchResults.map((result, index) => {
-                   <p>{ result.Value }</p>
+                   return <p>{result.Value}</p>
                 })}
 
             <p>You can return it here:</p>
