@@ -9,7 +9,7 @@ function Wiki() {
 	return (
 		<div className="container-fluid" id="main-container">
 			<img src={require('../../asset/logo.png')} className="img-fluid" alt="Bottle Genie app logo" id="logo" />
-			<h3 id="heading">BOTTLE WIKI</h3>
+			<h3 id="heading-wiki">BOTTLE WIKI</h3>
 			<section className="box" id="wiki-article">
 				<p>
 					In Germany, there is a <b>bottle return system</b>. When you buy certain products, you pay a{' '}
@@ -52,8 +52,10 @@ function Wiki() {
 						<li>Bottles purchased in other countries</li>
 						<li>
 							Containers with the{' '}
-							<a href="https://allaboutberlin.com/images/gruene-punkt-pfand.png">Grüne Punkt</a> logo -
-							these go in the yellow recycling bin
+							<a href="https://allaboutberlin.com/images/gruene-punkt-pfand.png" id="link">
+								Grüne Punkt
+							</a>{' '}
+							logo - these go in the yellow recycling bin
 						</li>
 					</ul>
 				</p>
@@ -138,7 +140,10 @@ function Wiki() {
 					</li>
 					<li>
 						<b>Charities:</b> some charities will accept bottle donations.{' '}
-						<a href="https://pfandgeben.de/">Pfandgeben</a> is the best way to find them.
+						<a href="https://pfandgeben.de/" id="link">
+							Pfandgeben
+						</a>{' '}
+						is the best way to find them.
 					</li>
 				</ul>
 				<h5>Leaving bottles under trash cans</h5>

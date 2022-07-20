@@ -1,9 +1,8 @@
-#main-container {
+#login-container {
     width: 375px;
     height: 667px;
     border: 1px solid black;
     border-radius: 5%;
-    padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -12,15 +11,23 @@
     text-align: center;
     font-family: 'Oswald', sans-serif;
     opacity: 90%;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
 }
 
-#logo {
-    width: 35% !important;
+#animated-logo {
+    width: 25% !important;
     margin: auto;
-    display: block;
+    display: inline-block;
     padding-top: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 7.2rem;
+}
+
+#tagline {
+    width: 45%;
+    height: 10%;
+    display: block;
+    margin-left: 5.3rem;
+    margin-top: 2rem;
 }
 
 #inputEmail3 {
@@ -32,7 +39,7 @@
     text-align: center;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .fw-semibold {

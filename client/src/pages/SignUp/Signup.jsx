@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { signup } from '../../api/auth';
 import './Signup.css';
-import '../../asset/logo.png';
+import '../../asset/logo_animated.gif';
+import '../../asset/tagline.png';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -41,7 +42,18 @@ function SignUp() {
     return (
         <>
             <div className="container-fluid" id="main-container">
-                <img src={require('../../asset/logo.png')} class="img-fluid" alt="Bottle Genie app logo" id="logo" />
+            <img
+				src={require('../../asset/logo_animated.gif')}
+				className="img-fluid"
+				alt="Animated Bottle Genie app logo"
+				id="animated-logo"
+			/>
+            <img
+				src={require('../../asset/tagline.png')}
+				className="img-fluid"
+				alt="Bottle Genie app tagline"
+				id="tagline"
+			/>
                 <h3 id="heading">SIGN UP</h3>
                 <form onSubmit={handleSubmit} method="post" id="sign-up-form" >
                     <div>
@@ -62,9 +74,6 @@ function SignUp() {
                         Already have an account?
                         <Link className="link" to='/login'> Log in</Link>
                     </span>
-                    <p className="fw-semibold" id="to-homepage">
-                        <Link className="link" to='/'>Back to Homepage</Link>
-                    </p>
                 </form>
             </div>
         </>
