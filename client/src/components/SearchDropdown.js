@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createPopper } from '@popperjs/core';
 import Button from 'react-bootstrap/Button';
@@ -15,9 +16,64 @@ function SearchDropdown() {
 		return Array.from(iterable);
 	};
 
-	const materialsArray = removeDuplicates(SearchDataSet.map((item) => item.Material));
-	const volumeArray = removeDuplicates(SearchDataSet.map((item) => item.Volume));
-	const brandArray = removeDuplicates(SearchDataSet.map((item) => item.Brand));
+	const [ materialsArray, setMaterialsArray ] = useState(
+		removeDuplicates(SearchDataSet.map((item) => item.Material))
+	);
+
+	const [ volumeArray, setVolumeArray ] = useState(removeDuplicates(SearchDataSet.map((item) => item.Volume)));
+	const [ brandArray, setBrandArray ] = useState(removeDuplicates(SearchDataSet.map((item) => item.Brand)));
+
+	const [ material, setMaterial ] = useState('');
+	const [ volume, setVolume ] = useState('');
+	const [ brand, setBrand ] = useState('');
+
+	const updateList = () => {
+		if (brand) {
+			setVolumeArray(
+				removeDuplicates(SearchDataSet.filter((item) => item.Brand === brand).map((item) => item.Volume))
+			);
+		}
+		if (brand || volume) {
+			setMaterialsArray(
+				removeDuplicates(
+					SearchDataSet.filter((item) => {
+						if (brand && volume) {
+							return item.Brand === brand && item.Volume === volume;
+						}
+						if (brand) {
+							return item.Brand === brand;
+						}
+						if (volume) {
+							return item.Volume === volume;
+						}
+					}).map((item) => item.Material)
+				)
+			);
+		}
+	};
+
+	const onMaterialChange = (event) => {
+		setMaterial(event.target.value);
+	};
+
+	const onVolumeChange = (event) => {
+		setVolume(event.target.value);
+		updateList();
+	};
+
+	const onBrandChange = (event) => {
+		setBrand(event.target.value);
+		updateList();
+	};
+
+	const navigate = useNavigate();
+
+	const goToResultPage = () => {
+		navigate({
+			pathname: '/result',
+			search: `?volume=${volume}&brand=${brand}&material=${material}`
+		});
+	};
 
 	return (
 		<div className="container-fluid" id="main-container">
@@ -25,28 +81,39 @@ function SearchDropdown() {
 			<h3 id="heading">SEARCH</h3>
 			<form>
 				<div class="form-group">
-					<select className="form-select">
-						{materialsArray.map((item) => {
-							return <option selected>Material: {item}</option>;
-						})}
-					</select>
-					<select className="form-select">
-						{volumeArray.map((item) => {
-							return <option selected>Volume: {item}</option>;
-						})}
-					</select>
-					<select className="form-select">
+					<select className="form-select" onChange={onBrandChange} value={brand}>
+						<option value="">Select your option</option>
 						{brandArray.map((item) => {
 							return (
-								<option value="1" selected id="brand">
+								<option value={item} id="choose-brand">
 									Brand: {item}
+								</option>
+							);
+						})}
+					</select>
+					<select className="form-select" onChange={onVolumeChange} value={volume}>
+						<option value="">Select your option</option>
+						{volumeArray.map((item) => {
+							return (
+								<option value={item} id="choose-volume">
+									Volume: {item}
+								</option>
+							);
+						})}
+					</select>
+					<select className="form-select" onChange={onMaterialChange} value={material}>
+						<option value="">Select your option</option>
+						{materialsArray.map((item) => {
+							return (
+								<option value={item} id="choose-material">
+									Material: {item}
 								</option>
 							);
 						})}
 					</select>
 				</div>
 			</form>
-			<button type="button" className="btn btn-success btn-md" id="button-search">
+			<button type="submit" className="btn btn-success btn-md" id="button-search" onClick={goToResultPage}>
 				Find return point
 			</button>
 			<NavigationBar />
