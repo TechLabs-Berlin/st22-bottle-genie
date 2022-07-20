@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
-import './Homepage.css';
+import './HomePage.css';
 import '../../asset/logo.png';
 
 function Homepage() {
