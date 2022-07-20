@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import './HomePage.css';
 import '../../asset/logo.png';
+import { AuthContext } from "../../context/auth";
 
 function Homepage() {
-    const navigate = useNavigate();
+    const { logoutUser } = useContext(AuthContext);
+
 
     return (
         <div className="container-fluid" id="main-container">
@@ -13,7 +15,7 @@ function Homepage() {
             <h2 id="welcome">Welcome!</h2>
             <br />
             <span id="greeting">Please use the navigation bar at the bottom.</span>
-            <span id="logout">And if you're done for the day, <a href="/login" id="logout-link">log out</a> and see you again!</span>
+            <span id="logout">And if you're done for the day, <button onClick={logoutUser} id="logout-link">log out</button> and see you again!</span>
             <NavigationBar />
         </div>
     )
