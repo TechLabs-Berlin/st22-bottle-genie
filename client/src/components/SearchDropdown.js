@@ -81,7 +81,7 @@ function SearchDropdown() {
 			<h3 id="heading">SEARCH</h3>
 			<form>
 				<div class="form-group">
-					<select className="form-select" onChange={onBrandChange} value={brand}>
+					<select className="form-select form-select-lg" onChange={onBrandChange} value={brand}>
 						<option value="">Brand</option>
 						{brandArray.map((item) => {
 							return (
@@ -91,7 +91,7 @@ function SearchDropdown() {
 							);
 						})}
 					</select>
-					<select className="form-select" onChange={onVolumeChange} value={volume}>
+					<select className="form-select form-select-lg" onChange={onVolumeChange} value={volume}>
 						<option value="">Volume</option>
 						{volumeArray.map((item) => {
 							return (
@@ -101,7 +101,7 @@ function SearchDropdown() {
 							);
 						})}
 					</select>
-					<select className="form-select" onChange={onMaterialChange} value={material}>
+					<select className="form-select form-select-lg" onChange={onMaterialChange} value={material}>
 						<option value="">Material</option>
 						{materialsArray.map((item) => {
 							return (
