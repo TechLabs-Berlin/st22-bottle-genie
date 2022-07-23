@@ -31,13 +31,11 @@ function Result() {
     return (
         <div className="result-component">
             <h5>Result:</h5>
-            {searchResults.length !==0 ? <p>Returnable</p> : <p>Nonreturnable</p>}
-
-                {searchResults.map((result, index) => {
-                   <p>{ result.Value }</p>
-                })}
-
-            <p>You can return it here:</p>
+            {searchResults.length !== 0 ? <p>Returnable</p> : <p>Nonreturnable</p>}
+            {searchResults.map((result, index) => {
+                return <p>{result.Value}</p>
+            })}
+            {searchResults.length !== 0 ? <p>You can return it here:</p> : <p>You can try your luck:</p>}
         </div>
     )
 }
