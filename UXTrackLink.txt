@@ -1,0 +1,15 @@
+Link to UX work
+
+https://www.notion.so/Bottle-genie-1eb134f2c4a7437fbb544ecc9b19c911
+
+including:
+- user testing
+- user interview
+- user research
+- personas
+- storyboard
+- scenarios
+- user flow through application
+- wireframe and prototype
+
+figma link is embedded in notion too
